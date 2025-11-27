@@ -1,20 +1,46 @@
-# אתר מתכונים - פרויקט צד לקוח ב-React
+# Recipe Website
 
-## תיאור הפרויקט
-אפליקציית פרונטנד מבוססת React להצגת מתכונים, צפייה בפרטים מלאים של כל מתכון, הוספת מתכונים חדשים (למשתמשים עם הרשאות ניהול), וצפייה ברשימת המשתמשים במערכת. הפרויקט מדמה מערכת ניהול תוכן (CMS) פשוטה בשילוב הרשאות והרשמות.
+A full-stack recipe management application where users can browse, add, update, and delete recipes. Built with **React** (frontend) and **ASP.NET Core Web API** (backend) with a **SQL Server** database.
 
-## פונקציונליות עיקרית
-- **דף מתכונים** – הצגת כלל המתכונים עם תמונה, שם ותיאור קצר.
-- **דף פרטי מתכון** – צפייה במרכיבים, שלבי הכנה, ותמונה מוגדלת.
-- **הוספת מתכון חדש** – עבור משתמשים עם הרשאות ניהול בלבד.
-- **רשימת משתמשים** – זמינה רק למנהלים, להצגת כלל המשתמשים במערכת.
+## Key Features
 
-## טכנולוגיות בשימוש
-- **React** – לבניית ממשק המשתמש.
-- **Redux** – לניהול מצב גלובלי של נתונים.
-- **Context API** – לניהול הרשאות והתחברות משתמשים.
-- **React Router** – לניווט בין מסכים.
-- **Axios** – לביצוע בקשות HTTP לשרת ה-API.
-- **Bootstrap** – לעיצוב מהיר ותגובתי (Responsive Design).
+- User registration and authentication
+- Add, edit, delete, and view recipes
+- Manage recipe ingredients and quantities
+- Filter recipes by difficulty, time, or servings
+- Responsive UI with Bootstrap
 
-## מבנה הפרויקט
+## Technologies
+
+- **Frontend:** React, Redux, Bootstrap, Axios
+- **Backend:** ASP.NET Core Web API
+- **Database:** SQL Server
+
+## Project Structure
+
+### Backend
+- `DAL` – Data access layer
+- `DTO` – Data transfer objects
+- `BL` – Business logic layer
+- `Controllers` – API endpoints
+
+### Frontend
+- `Components` – Reusable UI components
+- `Redux` – State management (actions, reducers, store)
+- `Axios` – API calls
+
+## Setup & Installation
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+
+# 2. Set up the SQL database and update connection strings
+
+# 3. Run the ASP.NET Core Web API
+
+# 4. Start the frontend
+npm install
+npm start
+
+# 5. Open the application in your browser
